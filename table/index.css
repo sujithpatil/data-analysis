@@ -1,0 +1,47 @@
+.sp-table {
+    max-width: calc(100vw - 350px);
+    overflow: scroll;
+}
+.sp-thead {
+    background-color: var(--color-table-header);
+    color: var(--color-white);
+    padding: 10px 0;
+    width: max-content;
+}
+
+.sp-tbody {
+    width: max-content;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.table-holder {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-th,
+.sp-td {
+    padding: 0 45px;
+    width: 300px;
+    min-width: 300px;
+    display: inline-block;
+    position: relative;
+}
+
+.delete-icon {
+    height: 16px;
+    position: absolute;
+    cursor: pointer;
+    right: 25px;
+}
+
+.sp-tr {
+    padding: 10px 0;
+}
+
+.sp-tr:nth-child(2n) {
+    background-color: var(--color-table-row);
+}
